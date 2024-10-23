@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repository') {
             steps {
                 // Pull the code from the GitHub repository
-                git url: https://github.com/Dheepan3/JavaAppBuild.git, branch: 'main'
+                git url: 'https://github.com/Dheepan3/JavaAppBuild.git', branch: 'main'
             }
         }
 
