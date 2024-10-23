@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+    tools {
+        maven 'Maven3' // Use the name you specified in Jenkins
+    }
+
     stages {
         stage('Clone Repository') {
             steps {
@@ -38,3 +42,4 @@ pipeline {
         }
     }
 }
+
